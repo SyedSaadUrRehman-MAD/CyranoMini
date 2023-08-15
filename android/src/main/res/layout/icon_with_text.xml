@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:orientation="vertical"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="5dp">
 
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/floating_btn_bg"
+        android:elevation="10dp"
+        android:outlineProvider="background"
+        android:outlineSpotShadowColor="@android:color/black"
+        android:padding="10dp"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="14"
+        android:src="@drawable/status_add" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="4"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="-5dp"
+        android:letterSpacing="0.1"
+        android:textSize="10sp" />
 </LinearLayout>

@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-  
-</selector>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape
+            android:shape="oval">
+            <solid android:color="#DF3D3C44"/>
+        </shape>
+    </item>
+
+    <!-- Bottom Layer: First Image -->
+    <item>
+        <bitmap
+            android:src="@drawable/shadows"
+            android:gravity="fill" />
+    </item>
+    <!-- Top Layer: Second Image -->
+    <item>
+        <bitmap
+            android:src="@drawable/light"
+            android:gravity="fill" />
+    </item>
+
+
+</layer-list>

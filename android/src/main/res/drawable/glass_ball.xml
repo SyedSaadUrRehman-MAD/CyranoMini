@@ -1,4 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
-</selector>
+    <item >
+        <shape
+            android:shape="oval">
+            <solid android:color="#50000000"/> <!-- Shadow color -->
+            <size android:width="4dp" android:height="4dp"/> <!-- Shadow size -->
+        </shape>
+    </item>
+
+    <!-- Background with gradient to simulate glass reflection -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#ffffff"
+                android:endColor="#131313"
+                android:angle="45"
+                android:type="linear"/>
+        </shape>
+    </item>
+    <!-- Overlay to simulate water reflection -->
+    <item android:top="40dp">
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#80ffffff"
+                android:endColor="#00ffffff"
+                android:centerX="0.5"
+                android:centerY="0.2"
+                android:gradientRadius="30%"
+                android:type="radial"/>
+        </shape>
+    </item>
+    <!-- Overlay to simulate glare -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#00ffffff"
+                android:centerColor="#30ffffff"
+                android:endColor="#00ffffff"
+                android:centerX="0.7"
+                android:centerY="0.3"
+                android:gradientRadius="20%"
+                android:type="radial"/>
+        </shape>
+    </item>
+
+</layer-list>
